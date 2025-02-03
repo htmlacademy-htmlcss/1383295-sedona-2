@@ -2,7 +2,7 @@
 
 * Студент: [Рахим Абдраев](https://up.htmlacademy.ru/htmlcss-individual/2/user/1383295).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-
+* Сайт: [Мой проект Седона](https://rakhim92.github.io/1383295-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
