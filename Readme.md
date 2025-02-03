@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Рахим Абдраев](https://up.htmlacademy.ru/htmlcss-individual/2/user/1383295).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
