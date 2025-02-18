@@ -1,0 +1,9 @@
+/* .catalog-filter {
+color: var(--white-color)
+} */
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}

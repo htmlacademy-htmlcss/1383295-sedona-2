@@ -1,0 +1,21 @@
+:root {
+  --main-color: #333333;
+  --strong-black: #000000;
+  --white-color: #FFFFFF;
+}
+
+.advantages-item_big {
+  color: var(--white-color);
+  /* color: green; */
+  background-color: #82B3D3
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* .index-subscribing {
+  color: var(--white-color);
+} */

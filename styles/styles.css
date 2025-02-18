@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --main-color: #333333;
+  --strong-black: #000000;
+  --white-color: #FFFFFF;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--strong-black);
+}
+
+ul {
+  list-style-type:  none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.page-subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.page-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.page-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.page-button {
+  background-color: #82B3D3;
+  color: var(--white-color);
+}
+.page-button-green {
+  background-color: #756157;
+  color: var(--white-color);
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* color: var(--strong-black); */
+  color: #000000;
+}
+
+.navigation-user li:nth-child(3) a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white-color);
+  width: 160px;
+  height: 36px;
+  background-color: #756157;
+}
