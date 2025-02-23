@@ -18,6 +18,8 @@
   --main-color: #333333;
   --strong-black: #000000;
   --white-color: #FFFFFF;
+  --button-grey: #82B3D3;
+  --button-green: #756157;
 }
 
 body {
@@ -28,16 +30,9 @@ body {
   color: var(--strong-black);
 }
 
-ul {
-  list-style-type:  none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .visually-hidden {
-  display: none;
+  position: fixed;
+  transform: scale(0);
 }
 
 .page-title {
@@ -63,11 +58,11 @@ a {
   line-height: 21px;
 }
 .page-button {
-  background-color: #82B3D3;
+  background-color: var(--button-grey);
   color: var(--white-color);
 }
 .page-button-green {
-  background-color: #756157;
+  background-color: var(--button-green);
   color: var(--white-color);
 }
 
@@ -75,16 +70,22 @@ a {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  /* color: var(--strong-black); */
-  color: #000000;
+  color: var(--strong-black);
 }
 
-.navigation-user li:nth-child(3) a {
+.catalog-title {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.advantages-item_big {
   color: var(--white-color);
-  width: 160px;
-  height: 36px;
-  background-color: #756157;
+  background-color: var(--button-grey);
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
