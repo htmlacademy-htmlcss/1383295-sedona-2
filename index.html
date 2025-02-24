@@ -23,31 +23,30 @@
             <a class="navigation-link" href="./catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-user">
+        <ul class="navigation-list navigation-user">
           <li>
-            <a href="./catalog.html">Найти</a>
+            <a class="navigation-link" href="./catalog.html"></a>
           </li>
           <li>
-            <a href="#">Избранное</a>
+            <a class="navigation-link" href="#"></a>
           </li>
           <li>
-            <a class="page-button-green" href="#">Хочу сюда!</a>
+            <a class="navigation-link page-button-green" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Страница посвящена городу Седона, расположенному в Америке</h1>
-      <section class="index-intro">
-        <h2 class="visually-hidden">Вводный раздел основной части</h2>
-        <img src="images/index/index-background.jpg" width="1200" height="485" alt="Рисунок с красивым горным пейзажем">
-        <img src="images/index/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
-      </section>
       <section class="index-advantages">
         <h2 class="visually-hidden">Преимущества</h2>
+        <div class="index-advantages__background">
+          <div class="index-advantages__welcome"></div>
+          <div class="index-advantages__divider"></div>
+        </div>
         <p class="page-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="page-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ul>
+        <ul class="navigation-list">
           <li class="advantages-item advantages-item_big">
             <h3 class="page-text">Настоящий городок</h3>
             <p class="page-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -76,21 +75,18 @@
         <h2 class="visually-hidden">Услуги</h2>
         <p class="page-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="page-subtitle">Опытный персонал и качественное обслуживание!</p>
-        <ul class="service-list">
+        <ul class="navigation-list service-list">
           <li class="service-item">
             <h3 class="service-title">Жильё</h3>
             <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            <!-- <img class="service-logo" src="images/index/advantage-icon1.svg" width="75" height="72" alt="Иконка с домиком"> -->
           </li>
           <li class="service-item">
             <h3 class="service-title">Еда</h3>
             <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            <!-- <img class="service-logo" src="images/index/advantage-icon2.svg" width="75" height="72" alt="Иконка с бургером"> -->
           </li>
           <li class="service-item">
             <h3 class="service-title">Сувениры</h3>
             <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
-            <!-- <img class="service-logo" src="images/index/advantage-icon3.svg" width="75" height="72" alt="Иконка с подарком"> -->
           </li>
         </ul>
       </section>
@@ -98,7 +94,7 @@
         <h2 class="visually-hidden">Переход на страницу каталога</h2>
         <p class="page-title">Заинтересовались?</p>
         <p class="page-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="./catalog.html">Поиск гостиницы в Седоне</a>
+        <a class="navigation-link page-button-green" href="./catalog.html">Поиск гостиницы в Седоне</a>
       </section>
       <section class="index-subscribing">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -113,7 +109,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="footer-social">
+      <ul class="navigation-list footer-social">
         <li class="social-item">
           <a href="#">
             <img src="images/footer/tg.svg" alt="Известная отечественная интернет-площадка">
