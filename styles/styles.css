@@ -28,23 +28,61 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: var(--strong-black);
+  background-color: var(--white-color);
 }
 
 .visually-hidden {
   position: fixed;
   transform: scale(0);
+
+}
+
+.navigation-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation-link {
+  text-align: center;
+  text-decoration: none;
+}
+
+.index-advantages__background {
+  width: 1200px;
+  height: 485px;
+  background: url("../images/index/index-background.jpg") no-repeat;
+  background-color: darkkhaki;
+  position: relative;
+}
+
+.index-advantages__welcome {
+  width: 458px;
+  height: 352px;
+  background: url("../images/index/welcome.svg") no-repeat;
+  position: absolute;
+  top: 51px;
+  left: 351px;
+}
+.index-advantages__divider {
+  width: 1200px;
+  height: 57px;
+  background: url("../images/index/divider.png") no-repeat;
+  position: absolute;
+  top: 428px;
 }
 
 .page-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
 }
 
 .page-subtitle {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .page-text {
@@ -61,10 +99,6 @@ body {
   background-color: var(--button-grey);
   color: var(--white-color);
 }
-.page-button-green {
-  background-color: var(--button-green);
-  color: var(--white-color);
-}
 
 .navigation-link {
   font-weight: 700;
@@ -73,10 +107,31 @@ body {
   color: var(--strong-black);
 }
 
+.page-button-green {
+  background-color: var(--button-green);
+  color: var(--white-color);
+  border-radius: 4px;
+}
+
+.index-search .page-button-green {
+  display: block;
+  width: 376px;
+  height: 52px;
+  text-align: center;
+}
+
+.catalog-filter {
+  background: url("../images/catalog/catalog-background.jpg");
+  background-color: darkkhaki;
+  color: var(--white-color);
+}
+
+
 .catalog-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  text-align: left;
 }
 
 .advantages-item_big {
