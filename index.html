@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
-    <header class="page-header">
+    <header class="header" data-test="header">
       <a class="logo" aria-current="page" href="#">
         <img src="images/header/logo.svg" alt="Логотип Город Седона" width="140" height="70">
       </a>
@@ -36,14 +35,17 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main" data-test="main">
       <h1 class="visually-hidden">Страница посвящена городу Седона, расположенному в Америке</h1>
-      <section class="index-advantages">
+        <section class="hero" data-test="hero">
+          <h2 class="visually-hidden">Нас встречает красивое изображение гор</h2>
+          <div class="index-advantages__background">
+            <div class="index-advantages__welcome"></div>
+            <div class="index-advantages__divider"></div>
+          </div>
+        </section>
+        <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="index-advantages__background">
-          <div class="index-advantages__welcome"></div>
-          <div class="index-advantages__divider"></div>
-        </div>
         <p class="page-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="page-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="navigation-list">
@@ -71,7 +73,7 @@
           </li>
         </ul>
       </section>
-      <section class="index-service">
+      <section class="service">
         <h2 class="visually-hidden">Услуги</h2>
         <p class="page-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="page-subtitle">Опытный персонал и качественное обслуживание!</p>
@@ -90,13 +92,13 @@
           </li>
         </ul>
       </section>
-      <section class="index-search">
+      <section class="search" data-test="search">
         <h2 class="visually-hidden">Переход на страницу каталога</h2>
         <p class="page-title">Заинтересовались?</p>
         <p class="page-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="navigation-link page-button-green" href="./catalog.html">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="index-subscribing">
+      <section class="subscribing" data-test="subscribe">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="page-title">Подпишитесь на рассылку</p>
         <p class="page-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -108,7 +110,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="footer" data-test="footer">
       <ul class="navigation-list footer-social">
         <li class="social-item">
           <a href="#">
