@@ -7,28 +7,32 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="page-header">
+  <header class="header" data-test="header">
     <a class="logo" aria-current="page" href="#">
       <img src="images/header/logo.svg" alt="Логотип Город Седона" width="140" height="70">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="./index.html">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Cедоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Гостиницы</a>
+          <a class="navigation-link" href="./catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
         <li>
-          <a class="navigation-link" href="#"></a>
+          <a class="navigation-link" href="#">
+            <img src="images/index/search.svg" alt="Лупа">
+          </a>
         </li>
         <li>
-          <a class="navigation-link" href="#"></a>
+          <a class="navigation-link" href="#">
+            <img src="images/index/heart.svg" alt="Сердечко">
+          </a>
         </li>
         <li>
           <a class="navigation-link page-button-green" href="#">Хочу сюда!</a>
@@ -36,58 +40,60 @@
       </ul>
     </nav>
   </header>
-  <main class="main-catalog">
+  <main class="main" data-test="main">
     <h1 class="visually-hidden">Страница каталога гостиниц</h1>
-    <section class="catalog-filter">
+    <section class="filter" data-test="filter">
       <h2 class="visually-hidden">Попробуйте выбрать подходящую гостиницу</h2>
       <p class="catalog-title">Гостиницы Седоны</p>
       <!-- <img src="images/catalog/catalog-background.jpg" width="1200" height="412"  alt="Размытый горный хребет на фоне"> -->
       <p>Гостиницы</p>
-      <fieldset>
-        <legend>Инфраструктура:</legend>
-        <ul class="check-list">
-          <li class="check-item">
-            <input type="checkbox"  id="pool" checked>
-            <label for="pool">Бассейн</label>
-          </li>
-          <li class="check-item">
-            <input type="checkbox" id="parking" checked>
-            <label for="parking">Парковка</label>
-          </li>
-          <li class="check-item">
-            <input type="checkbox" id="wifi">
-            <label for="wifi">Wi-Fi</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>Тип жилья:</legend>
-        <ul class="appartament-list">
-          <li class="appartament-item">
-            <input type="radio"  id="hotel" name="appartament" checked>
-            <label for="hotel">Гостиница</label>
-          </li>
-          <li class="appartament-item">
-            <input type="radio" id="motel" name="appartament">
-            <label for="motel">Мотель</label>
-          </li>
-          <li class="appartament-item">
-            <input type="radio" id="penthouse" name="appartament">
-            <label for="penthouse">Апартаменты</label>
-          </li>
-        </ul>
-      </fieldset>
-      <div class="slider"></div>
-      <button class="page-button">Применить</button>
-      <button>Сбросить</button>
+      <form action="" method="post">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul class="check-list">
+            <li class="check-item">
+              <input type="checkbox"  id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li class="check-item">
+              <input type="checkbox" id="parking" checked>
+              <label for="parking">Парковка</label>
+            </li>
+            <li class="check-item">
+              <input type="checkbox" id="wifi">
+              <label for="wifi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul class="hotel-list">
+            <li class="hotel-item">
+              <input type="radio"  id="hotel" name="appartement" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li class="hotel-item">
+              <input type="radio" id="motel" name="appartement">
+              <label for="motel">Мотель</label>
+            </li>
+            <li class="hotel-item">
+              <input type="radio" id="penthouse" name="appartement">
+              <label for="penthouse">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="button" class="page-button">Применить</button>
+        <button type="reset">Сбросить</button>
+      </form>
     </section>
-    <section class="catalog-results">
-      <h2 class="visually-hidden">Выдача списка найденных гостиниц</h2>
-      <p class="page-title">Найдено гостиниц: 38</p>
+    <section class="results" data-test="catalog">
+      <h2 class="page-title">Найдено гостиниц: 38</h2>
       <ul class="hotel-list">
         <li class="hotel-item">
           <h3 class="page-text">Amara Resort & Spa</h3>
-          <img src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Амара Резорт Спа">
+          <a href="#">
+            <img src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Амара Резорт Спа">
+          </a>
           <div class="description page-description">
             <span>Гостиница</span>
             <span>От 4000 Р</span>
@@ -101,7 +107,9 @@
         </li>
         <li class="hotel-item">
           <h3 class="page-text">Villas at Poco Diablo</h3>
-          <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Виллас эт Поко Диабло">
+          <a href="#">
+            <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Виллас эт Поко Диабло">
+          </a>
           <div class="description page-description">
             <span>Гостиница</span>
             <span>От 5000 Р</span>
@@ -115,7 +123,9 @@
         </li>
         <li class="hotel-item">
           <h3 class="page-text">Desert Quail Inn</h3>
-          <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Дезерт Квейл Инн">
+          <a href="#">
+            <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Дезерт Квейл Инн">
+          </a>
           <div class="description page-description">
             <span>Гостиница</span>
             <span>От 2500 Р</span>
@@ -129,7 +139,9 @@
         </li>
         <li class="hotel-item">
           <h3 class="page-text">GreenTree Inn</h3>
-          <img src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Грин Три Инн">
+          <a href="#">
+            <img src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Грин Три Инн">
+          </a>
           <div class="description page-description">
             <span>Гостиница</span>
             <span>От 1500 Р</span>
@@ -144,7 +156,7 @@
       </ul>
       <div class="catalog-pagination"></div>
     </section>
-    <section class="catalog-subscribe">
+    <section class="subscribing" data-test="subscribe">
       <h2 class="visually-hidden">Подписка на рассылку</h2>
       <p class="page-title">Подпишитесь на рассылку</p>
       <p class="page-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -155,7 +167,7 @@
       </form>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="footer" data-test="footer">
     <ul class="navigation-list footer-social">
       <li class="social-item">
         <a href="#">

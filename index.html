@@ -24,10 +24,14 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li>
-            <a class="navigation-link" href="./catalog.html"></a>
+            <a class="navigation-link" href="./catalog.html">
+              <img src="images/index/search.svg" alt="Лупа">
+            </a>
           </li>
           <li>
-            <a class="navigation-link" href="#"></a>
+            <a class="navigation-link" href="#">
+              <img src="images/index/heart.svg" alt="Сердечко">
+            </a>
           </li>
           <li>
             <a class="navigation-link page-button-green" href="#">Хочу сюда!</a>
@@ -39,10 +43,9 @@
       <h1 class="visually-hidden">Страница посвящена городу Седона, расположенному в Америке</h1>
         <section class="hero" data-test="hero">
           <h2 class="visually-hidden">Нас встречает красивое изображение гор</h2>
-          <div class="index-advantages__background">
-            <div class="index-advantages__welcome"></div>
-            <div class="index-advantages__divider"></div>
-          </div>
+            <img src="images/index/index-background.jpg" class="advantages__background" alt="Потрясающая горная панорама" width="1200" height="485">
+            <img src="images/index/welcome.svg" class="advantages__welcome" alt="Добро пожаловать" width="458" height="352">
+            <img src="images/index/divider.png" class="advantages__divider" alt="Элемент оформления" width="1200" height="57">
         </section>
         <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -93,20 +96,17 @@
         </ul>
       </section>
       <section class="search" data-test="search">
-        <h2 class="visually-hidden">Переход на страницу каталога</h2>
-        <p class="page-title">Заинтересовались?</p>
+        <h2 class="page-title">Заинтересовались?</h2>
         <p class="page-subtitle">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="navigation-link page-button-green" href="./catalog.html">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribing" data-test="subscribe">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="page-title">Подпишитесь на рассылку</p>
+        <h2 class="page-title">Подпишитесь на рассылку</h2>
         <p class="page-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <img src="images/index/mounts.jpg" width="200" height="100" alt="Размытое фото гор на заднем фоне">
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe"></label>
           <input type="email" id="subscribe" placeholder="Ваш e-mail" name="subscribe">
-          <button class="page-button">Подписаться</button>
+          <button class="page-button" type="button">Подписаться</button>
         </form>
       </section>
     </main>
@@ -114,7 +114,7 @@
       <ul class="navigation-list footer-social">
         <li class="social-item">
           <a href="#">
-            <img src="images/footer/tg.svg" alt="Известная отечественная интернет-площадка">
+            <img src="images/footer/tg.svg" alt="телеграм">
           </a>
         </li>
         <li class="social-item">
