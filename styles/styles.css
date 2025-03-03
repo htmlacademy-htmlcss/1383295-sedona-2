@@ -22,6 +22,14 @@
   --button-green: #756157;
 }
 
+html {
+  height: 100%;
+}
+
+.main__wrapper {
+  flex-grow: 1;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -29,46 +37,114 @@ body {
   line-height: 21px;
   color: var(--strong-black);
   background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .visually-hidden {
   position: fixed;
   transform: scale(0);
-
 }
 
-.navigation-list {
+
+
+/*Главная страница Хедер*/
+
+.header {
+  display: flex;
+}
+
+.header .logo {
+  margin-left: 70px;
+}
+
+.navigation {
+  display: flex;
+  margin-left: 30px;
+}
+
+
+.site-nav-list, .user-nav-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   padding-left: 0;
 }
 
-.navigation-link {
+.site-nav-list {
+  width: 339px;
+}
+
+.user-nav-list {
+  width: 268px;
+  margin-left: 285px;
+}
+
+.site-nav-link, .user-nav-item {
   text-align: center;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--strong-black);
 }
 
-.index-advantages__background {
+
+/*Преимущества */
+
+.hero {
   width: 1200px;
   height: 485px;
-  background: url("../images/index/index-background.jpg") no-repeat;
-  background-color: darkkhaki;
-  position: relative;
+  background-image: url("../images/index/index-background.jpg");
+  background-repeat: no-repeat;
 }
 
-.index-advantages__welcome {
+.advantages__welcome {
   width: 458px;
   height: 352px;
-  background: url("../images/index/welcome.svg") no-repeat;
-  position: absolute;
-  top: 51px;
-  left: 351px;
+  background-image: black;
+  color: white;
+  padding-top: 51px;
+  padding-left:  371px;
 }
-.index-advantages__divider {
+
+.advantages__divider {
+  background-image: black;
+  color: white;
+  margin-inline: auto;
+  padding-top: 20px;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.adv-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  list-style: none;
+  padding-left: 0;
+}
+
+.adv-item {
+  width: 400px;
+  height: 385px;
+  text-align: center;
+}
+
+.adv-item-title {
+  padding-top: 102px;
+}
+
+.adv-item_big {
   width: 1200px;
-  height: 57px;
-  background: url("../images/index/divider.png") no-repeat;
-  position: absolute;
-  top: 428px;
+  color: var(--white-color);
+  background-color: var(--button-grey);
+  display: flex;
 }
 
 .page-title {
@@ -100,28 +176,78 @@ body {
   color: var(--white-color);
 }
 
-.navigation-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: var(--strong-black);
-}
-
 .page-button-green {
   background-color: var(--button-green);
   color: var(--white-color);
   border-radius: 4px;
 }
 
-.index-search .page-button-green {
-  display: block;
+.search-title {
+  margin-top: 96px;
+}
+
+.search-subtitle {
+  margin-top: 20px;
+}
+
+.search__button {
   width: 376px;
   height: 52px;
   text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 54px;
 }
 
+/*Услуги и Сервис*/
+
+.service-nav-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-item {
+  width: 400px;
+  height: 385px;
+  text-align: center;
+  background: #83B3D31F;
+  /* padding-top: 183px; */
+}
+
+.service-title {
+  padding-top: 183px;
+
+}
+
+.service-description {
+  margin: 0 auto;
+  width: 230px;
+  height: 63px;
+  padding-top: 30px;
+}
+
+.subscribing {
+  background-image: url("../images/index/mounts.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.subscribing__title {
+  padding-top: 96px;
+}
+
+.subscribing__subtitle {
+  padding-top: 20px;
+}
+
+/*Каталог*/
+
 .filter {
+  width: 1200px;
   background: url("../images/catalog/catalog-background.jpg");
+  background-repeat: no-repeat;
   background-color: darkkhaki;
   color: var(--white-color);
 }
@@ -134,13 +260,90 @@ body {
   text-align: left;
 }
 
-.advantages-item_big {
-  color: var(--white-color);
-  background-color: var(--button-grey);
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.advantages-description {
+.footer-nav-social {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-phone {
+  text-decoration: none;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+}
+
+
+/*Каталог*/
+
+.breadcrumbs {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.breadcrumbs-item__link {
+  text-decoration: none;
+}
+
+.filter-list {
+  display: flex;
+}
+
+.filter-three {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-one, .filter-two, .filter-three {
+  border: none;
+}
+
+.filter-check-list , .filter-hotel-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.table-board {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.board-nav-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+}
+
+.board-nav-list__item {
+  border: 1px solid #000000;
+  width: 16px;
+  height: 14px;
+  box-sizing: border-box;
+  margin-left: 8px;
+}
+
+.hotel-list {
+  width: 1060px;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-list__item {
+  width: 340px;
+  height: 438px;
+  border: 1px solid #E6E6E6;
 }
