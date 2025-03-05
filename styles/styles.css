@@ -91,6 +91,37 @@ body {
 }
 
 
+/*Общее*/
+
+.main {
+  width: 1200px;
+}
+
+.header {
+  width: 1200px;
+}
+
+.footer {
+  width: 1200px;
+}
+
+.advantages {
+  width: 1200px;
+}
+
+.service {
+  width: 1200px;
+}
+
+.search {
+  width: 1200px;
+}
+
+.subscribing {
+  width: 1200px;
+}
+
+
 /*Преимущества */
 
 .hero {
