@@ -149,24 +149,24 @@ body {
   line-height: 21px;
 }
 
-.adv-nav-list {
+.advantages-nav-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
 }
 
-.adv-item {
+.advantages-item {
   width: 33.33%;
   min-height: 385px;
   text-align: center;
 }
 
-.adv-item-title {
+.advantages-item-title {
   padding-top: 102px;
 }
 
-.adv-item_big {
+.advantages-item_big {
   width: 100%;
   color: var(--white-color);
   background-color: var(--button-grey);
@@ -226,11 +226,11 @@ body {
   color: #FFFFFF;
 }
 
-.subscribing__title {
+.subscribing-title {
   padding-top: 96px;
 }
 
-.subscribing__subtitle {
+.subscribing-subtitle {
   padding-top: 20px;
 }
 
