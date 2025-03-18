@@ -26,11 +26,11 @@
 
 .container {
   width: 1200px;
-  margin-inline: auto;
+  margin: auto;
   min-height: 100%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  margin: 0;
+
 }
 
 
@@ -93,11 +93,10 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
 }
 
 .header-logo {
-  margin-left: 0.5833%;
+  margin-left: 70px;
 }
 
 .header-navigation {
@@ -144,6 +143,7 @@ body {
   background-color: #0000004D;
   color: #000000;
   text-align: center;
+  margin-bottom: 69px;
 }
 
 .hero-intro {
@@ -152,16 +152,20 @@ body {
 
 /*Advantages */
 
+.advantages {
+  margin-bottom: 64px;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  max-width: 700px;
-  margin: 0;
-  margin-bottom: 25px;
-  margin-inline: auto;
   text-transform: uppercase;
+  max-width: 620px;
+  margin-inline: auto;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
 .advantages-subtitle {
@@ -169,8 +173,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
-  margin-inline: auto;
+  margin: auto;
+  margin-bottom: 90px;
 }
 
 .advantages-description {
@@ -190,27 +194,36 @@ body {
   width: 33.33%;
   height: 385px;
   text-align: center;
+  display: flex;
 }
 
 .advantages-item-big {
   width: 100%;
   color: var(--white-color);
   background-color: var(--button-grey);
-  display: flex;
-  justify-content: space-between;
 }
 
 .advantages-name {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  padding-top: 102px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.block-shade {
+  background-color: #83B3D333;
+}
+
+.advantages-reversed {
+  flex-direction: row-reverse;
 }
 
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .advantages-text {
@@ -230,6 +243,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .service-subtitle {
@@ -237,36 +251,49 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
   margin-inline: auto;
+  margin: 0;
+  margin-bottom: 64px;
 }
 
 .service-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  margin: 0;
   padding-left: 0;
 }
 
 .service-item {
-  width: 33.33%;
-  min-height: 385px;
+  width: 400px;
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   text-align: center;
   background: #83B3D31F;
-  /* padding-top: 183px; */
+}
+
+.block-light {
+  background-color: #FFFFFF;
 }
 
 .service-name {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  padding-top: 183px;
+  margin: 0;
+}
+
+.service-link {
+  display: block;
+  margin-top: 81px;
 }
 
 .service-description {
   margin: 0 auto;
   width: 230px;
   height: 63px;
-  padding-top: 30px;
 }
 
 /*Поиск*/
@@ -275,6 +302,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
   margin-top: 96px;
 }
 
@@ -325,6 +353,7 @@ body {
 /*Каталог*/
 
 .filter {
+  min-height: 412px;
   background: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -333,12 +362,13 @@ body {
 }
 
 
-.catalog-title {
+.filter-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   text-align: left;
   margin: 0;
+  margin-left: 70px;
 }
 
 .footer {
@@ -366,27 +396,66 @@ body {
 
 /*Каталог*/
 
-.breadcrumbs {
+.breadcrumbs-list {
   list-style: none;
   padding-left: 0;
   display: flex;
 }
 
-.breadcrumbs-item__link {
+.breadcrumbs-link {
   text-decoration: none;
+  color: #FFFFFF;
 }
 
-.filter-list {
+.breadcrumbs-link::before {
+  content: ">"
+}
+
+.filter-form {
   display: flex;
 }
 
-.filter-three {
-  display: flex;
-  flex-direction: column;
-}
-
-.filter-one, .filter-two, .filter-three {
+.filter-group {
   border: none;
+}
+
+.price-handle {
+  display: flex;
+  gap: 2px;
+}
+
+.price-control {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.price-label {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  justify-self: end;
+  align-self: center;
+  padding-right: 20px;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.price-input {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  min-width: 144px;
+  padding-inline: 20px 50px;
+  padding-block: 12px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
 }
 
 .filter-check-list , .filter-hotel-list {
