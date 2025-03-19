@@ -359,6 +359,7 @@ body {
   background-repeat: no-repeat;
   background-color: darkkhaki;
   color: var(--white-color);
+  margin-bottom: 50px;
 }
 
 
@@ -463,20 +464,30 @@ body {
   padding-left: 0;
 }
 
+.results-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+
+}
+
 .table-board {
-  width: 1200px;
+  max-width: 1060px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 70px;
+  margin-left: 70px;
 }
 
-.board-nav-list {
+.board-list {
   list-style: none;
   padding-left: 0;
   display: flex;
 }
 
-.board-nav-list__item {
+.board-item {
   border: 1px solid #000000;
   width: 16px;
   height: 14px;
@@ -489,9 +500,12 @@ body {
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
-.hotel-list__item {
+.hotel-item {
   min-width: 340px;
   min-height: 438px;
   border: 1px solid #E6E6E6;
