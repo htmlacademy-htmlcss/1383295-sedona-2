@@ -73,22 +73,15 @@ body {
   line-height: 28px;
 }
 
-/* .page-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-} */
-.page-button {
-  background-color: var(--button-grey);
-  color: var(--white-color);
-  display: block;
-}
-
 .page-button-green {
-  display: block;
   background-color: var(--button-green);
   color: var(--white-color);
-  border-radius: 4px;
+  grid-area: details;
+}
+
+.page-button-blue {
+  background-color: var(--button-grey);
+  color: var(--white-color);
 }
 
 /*Главная страница Хедер*/
@@ -109,6 +102,7 @@ body {
 .site-list, .user-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   padding-left: 0;
 }
@@ -316,6 +310,7 @@ body {
   margin: 0;
   margin-inline: auto;
   margin-top: 20px;
+  margin-bottom: 54px;
 }
 
 .search__button {
@@ -362,6 +357,7 @@ body {
   background-color: darkkhaki;
   color: var(--white-color);
   margin-bottom: 50px;
+  padding-left: 70px;
 }
 
 
@@ -371,7 +367,8 @@ body {
   line-height: 78px;
   text-align: left;
   margin: 0;
-  margin-left: 70px;
+  padding-top: 35px;
+
 }
 
 .footer {
@@ -419,10 +416,13 @@ body {
 }
 
 .filter-group {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .price-handle {
+  margin-top: 32px;
   display: flex;
   gap: 2px;
 }
@@ -559,9 +559,9 @@ body {
   margin: 0;
 }
 
-.page-button-green {
+/* .page-button-green {
   grid-area: details;
-}
+} */
 
 .page-button {
   grid-area: favorite;
@@ -588,4 +588,51 @@ body {
 .pagination-item-selected {
   background-color: #F2F2F2;
   color: #000000;
+}
+
+.user-link {
+  padding: 8px 34px;
+}
+
+.button {
+  display: block;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 8px 50px;
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 96px;
+}
+
+.subscribing-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-button {
+  padding: 8px 50px;
+}
+
+.filter-bonuses {
+  margin-right: 70px;
+}
+
+.filter-types {
+  margin-right: 140px;
+}
+
+.filter-money {
+  margin-right: 70px;
 }
