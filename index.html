@@ -25,13 +25,14 @@
           </ul>
           <ul class="user-list">
             <li class="user-item">
-              <a class="user-link" href="./catalog.html">
-                <img src="images/index/search.svg" alt="Лупа">
+              <a class="user-link find-link" href="./catalog.html">
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="user-item">
-              <a class="user-link" href="#">
-                <img src="images/index/heart.svg" alt="Сердечко">
+              <a class="user-link favorite-link" href="#">
+                 <span class="visually-hidden">Избранное</span>
+                 <span class="favorite-badge">12</span>
               </a>
             </li>
             <li class="user-item">
@@ -111,36 +112,40 @@
             <p class="search-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="search-button button page-button-green" href="./catalog.html">Поиск гостиницы в Седоне</a>
           </section>
-          <section class="subscribing" data-test="subscribe">
+
+          <section class="subscribing subscribing-with-picture" data-test="subscribe">
             <h2 class="subscribing-title">Подпишитесь на рассылку</h2>
-            <p class="subscribing-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="subscribing-subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribing-form" action="https://echo.htmlacademy.ru/" method="post" >
-              <input type="email" id="subscribe" placeholder="Ваш e-mail" name="subscribe">
-              <button class="page-button" type="button">Подписаться</button>
+              <input class="subscribing-input" type="email" id="subscribing-field" placeholder="Ваш e-mail" name="subscribe">
+              <label class="subscribing-control" for="subscribing-field"></label>
+              <button class="subscribing-button button page-button-blue" type="submit">Подписаться</button>
             </form>
           </section>
         </main>
 
       <footer class="footer" data-test="footer">
-        <ul class="footer-nav-social">
+        <ul class="social-list">
           <li class="social-item">
-            <a href="#">
-              <img src="images/footer/tg.svg" alt="телеграм">
+            <a class="social-link tg-link" href="https://t.me/htmlacademy" target="_blank">
+              <span class="visually-hidden">Канал в Telegram</span>
             </a>
           </li>
           <li class="social-item">
-            <a href="#">
-              <img src="images/footer/utube.svg" alt="Запрещенная видео-площадка">
+            <a class="social-link utube-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+              <span class="visually-hidden">Канал в Utube</span>
             </a>
           </li>
           <li class="social-item">
-            <a href="#">
-              <img src="images/footer/vk.svg" alt="Вконтакте">
+            <a class="social-link vk-link" href="https://vk.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">Канал в Вконтакте</span>
             </a>
           </li>
         </ul>
         <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <img src="images/footer/developer.svg" alt="Разработчик HTML-академия">
+        <a class="footer-developer" href="https://htmlacademy.ru/study" target="_blank">
+          <span class="visually-hidden">Сайт разработчика сайта</span>
+        </a>
       </footer>
     </div>
   </body>
