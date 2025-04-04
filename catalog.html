@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -276,6 +277,48 @@
         <span class="visually-hidden">Сайт разработчика сайта</span>
       </a>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+          <label class="modal-transfer modal-arrive">
+            <span class="modal-label">Дата Заезда</span>
+            <input class="modal-date" type="text" placeholder="27 апреля 2020" name="arrive">
+            <!-- <span class="modal-date-mark"></span> -->
+          </label>
+
+          <label class="modal-transfer modal-departure">
+            <span class="modal-label">Дата Выезда</span>
+            <input class="modal-date" type="text" placeholder="1 сентября 2023" name="departure">
+            <!-- <span class="modal-date-mark"></span> -->
+          </label>
+
+          <div class="modal-age">
+            <label class="modal-age-control">
+              <span class="modal-age-label">Взрослые</span>
+              <input class="modal-age-input" type="number" name="adults">
+              <span class="modal-age-mark"></span>
+            </label>
+
+            <label class="modal-age-control"">
+              <span class="modal-age-label">Дети</span>
+              <input class="modal-age-input" type="number" name="childrens">
+              <span class="modal-age-mark"></span>
+            </label>
+          </div>
+
+          <button class="modal-button button page-button-blue" type="button">Начать
+            <span class="visually-hidden">Начать поиск гостиницы</span>
+          </button>
+
+        </section>
+      </div>
+    </div>
   </div>
 </body>
 </html>

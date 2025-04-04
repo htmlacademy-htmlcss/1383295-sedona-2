@@ -1114,3 +1114,157 @@ body {
 .filter-money {
   margin-right: 70px;
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  width: 717px;
+  min-height: 576px;
+  padding: 64px 70px;
+  background-color: #ffffff;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../images/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: 137px 110px auto 137px 110px;
+  grid-template-rows: auto repeat(6, 48px) auto;
+  align-items: center;
+}
+
+.modal-title {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal-arrive {
+  grid-row: 2/3;
+  grid-column: 1/6;
+}
+
+.modal-departure {
+  grid-row: 4/5;
+  grid-column: 1/6;
+}
+
+.modal-transfer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-age {
+  grid-row: 6/7;
+  grid-column: 1/6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-age-label {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.modal-age-input {
+ width: 31px;
+ height: 48px;
+ font-weight: 700;
+ font-size: 18px;
+ line-height: 20px;
+}
+
+/* .modal-age-mark::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/modal-minus.svg);
+} */
+
+
+.modal-age-mark::after {
+
+  content: "";
+  display: block;
+  width: 40px;
+  height: 48px;
+  border: 1px solid #000000;
+  background-image: url(../images/modal-plus.svg);
+  background-repeat: no-repeat;
+}
+
+.modal-age-control {
+  display: flex;
+}
+
+.modal-label {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+
+}
+
+.modal-date {
+  box-sizing: border-box;
+  padding: 12px 100px 12px 20px;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+
+.modal-button {
+  grid-row: 8/9;
+  grid-column: 1/-1;
+  min-width: 577px;
+  min-height: 60px;
+}
+
+/* .modal-date-mark::after {
+  grid-column: 2/-1;
+
+  content: "";
+  display: block;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/modal-calendar.svg);
+  cursor: pointer;
+} */
