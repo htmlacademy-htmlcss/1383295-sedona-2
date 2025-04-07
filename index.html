@@ -10,7 +10,7 @@
     <div class="container">
       <header class="header" data-test="header">
         <a class="header-logo" aria-current="page" href="#">
-          <img src="images/header/logo.svg" alt="Логотип Город Седона" min-width="140" min-height="70">
+          <img src="images/header/logo.svg" alt="Логотип Город Седона" width="140" height="70">
         </a>
         <nav class="header-navigation">
           <ul class="site-list">
@@ -42,7 +42,6 @@
           </ul>
         </nav>
       </header>
-
         <main class="main" data-test="main">
           <h1 class="visually-hidden">Добро пожаловать в город Седона</h1>
           <section class="hero" data-test="hero">
@@ -91,20 +90,17 @@
             <h2 class="service-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
             <p class="service-subtitle">Опытный персонал и качественное обслуживание!</p>
             <ul class="service-list">
-              <li class="service-item">
-                <a href="#" class="service-link"><img src="images/index/Service1.svg" class="service-picture"></a>
+              <li class="service-item service-house">
                 <h3 class="service-name">Жильё</h3>
-                <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="service-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </li>
-              <li class="service-item block-light">
-                <a href="#" class="service-link"><img src="images/index/Service2.svg" class="service-picture"></a>
+              <li class="service-item service-burger block-light">
                 <h3 class="service-name">Еда</h3>
-                <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="service-description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="service-item">
-                <a href="#" class="service-link"><img src="images/index/Service3.svg" class="service-picture"></a>
+              <li class="service-item service-gift">
                 <h3 class="service-name">Сувениры</h3>
-                <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
+                <p class="service-description">Не только китайского,<br>но и настоящего местного производства!</p>
               </li>
             </ul>
           </section>
@@ -125,8 +121,61 @@
           </section>
         </main>
 
+        <div class="modal-container visually-hidden">
+          <div class="modal">
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <section class="modal-content">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+              <label class="modal-transfer modal-arrive">
+                <span class="modal-label">Дата Заезда:</span>
+                <span class="date-wrapper">
+                  <input class="modal-date" type="text" placeholder="27 апреля 2020" name="arrive">
+                </span>
+              </label>
+              <p class="modal-inform modal-inform-arrive">Мы не можем отправить вас в прошлое</p>
+
+              <label class="modal-transfer modal-departure">
+                <span class="modal-label">Дата Выезда:</span>
+                <span class="date-wrapper">
+                  <input class="modal-date" type="text" placeholder="1 сентября 2023" name="departure">
+                </span>
+              </label>
+              <p class="modal-inform modal-inform-departure">На эти даты есть свободные номера. Пока есть.</p>
+
+              <div class="modal-age">
+                <label class="modal-age-control">
+                  <span class="modal-age-label">Взрослые:</span>
+                  <span class="modal-age-mark">
+                    <input class="modal-age-input" type="number" name="adults" placeholder="2" min="0" max="99">
+                  </span>
+                </label>
+
+                <label class="modal-age-control">
+                  <span class="modal-age-label kinder-age">Дети:</span>
+                  <span class="modal-age-mark">
+                    <input class="modal-age-input" type="number" name="adults" placeholder="2" min="0" max="99">
+                  </span>
+                </label>
+              </div>
+
+              <button class="modal-button button page-button-blue" type="button">Начать
+                <span class="visually-hidden">Начать поиск гостиницы</span>
+              </button>
+
+            </section>
+          </div>
+        </div>
+
       <footer class="footer" data-test="footer">
         <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link vk-link" href="https://vk.com/htmlacademy" target="_blank">
+              <span class="visually-hidden">Канал в Вконтакте</span>
+            </a>
+          </li>
           <li class="social-item">
             <a class="social-link tg-link" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Канал в Telegram</span>
@@ -135,11 +184,6 @@
           <li class="social-item">
             <a class="social-link utube-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
               <span class="visually-hidden">Канал в Utube</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link vk-link" href="https://vk.com/htmlacademy" target="_blank">
-              <span class="visually-hidden">Канал в Вконтакте</span>
             </a>
           </li>
         </ul>
