@@ -380,6 +380,7 @@ body {
 .advantages-description {
   margin: 0;
   color: var(--main-color);
+  min-width: 230px;
 }
 
 .advantages-item-big .advantages-description {
@@ -539,7 +540,9 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
   padding-top: 96px;
+  margin-bottom: 20px;
 }
 
 .subscribing-subtitle {
@@ -564,6 +567,7 @@ body {
   grid-row: 1/-1;
   grid-column: 1/-2;
   padding: 12px 20px;
+  height: 52px;
   box-sizing: border-box;
   font-family: inherit;
   font-size: 18px;
@@ -624,7 +628,8 @@ body {
 
 .footer {
   display: flex;
-  min-height: 150px;
+  height: 50px;
+  padding: 40px 70px 30px 70px;
   justify-content: space-between;
   align-items: center;
 }
@@ -634,8 +639,8 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding-left: 0;
-  margin-left: 70px;
+  padding: 0;
+  margin: 0;
 }
 
 .social-link {
@@ -699,13 +704,12 @@ body {
 .footer-developer {
   display: block;
   position: relative;
-  margin-right: 70px;
   width: 115px;
   height: 34px;
   text-decoration: none;
 }
 
-.footer-developer::before {
+.footer-developer::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -936,6 +940,7 @@ body {
   height: 49px;
   padding: 14px 20px;
   padding-right: 48px;
+  margin-right: 70px;
   font: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -958,15 +963,28 @@ body {
   outline: 2px solid #dbb590;
 }
 
+.catalog-wrapper {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
 .visual-list {
   grid-area: view;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
-  max-width: 272px;
+  min-width: 160px;
+  height: 48px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.visual-item {
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  border: 2px solid #E5E5E5;
 }
 
 .visual-button {
@@ -999,6 +1017,8 @@ body {
 }
 
 .results-title {
+  margin: 0;
+  margin-right: 200px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1007,12 +1027,11 @@ body {
 }
 
 .table-board {
-  max-width: 1060px;
+  min-width: 1060px;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 70px;
-  margin-left: 70px;
+  margin-bottom: 40px;
 }
 
 .board-list {
@@ -1032,18 +1051,21 @@ body {
 .hotel-list {
   list-style: none;
   padding-left: 0;
+  height: 896px;
   display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
   flex-wrap: wrap;
   margin: 0;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-bottom: 40px;
 }
 
 .hotel-item {
-  width: 300px;
-  height: 398px;
+  width: 340px;
+  height: 438px;
   padding: 20px;
   border: 1px solid #E6E6E6;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 212px auto;
@@ -1059,6 +1081,9 @@ body {
 .hotel-title {
   grid-area: title;
   margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .hotel-link {
@@ -1069,6 +1094,7 @@ body {
   grid-area: type;
   font-weight: 400;
   font-size: 18px;
+  color: var(--main-color);
   line-height: 21px;
   margin: 0;
 }
@@ -1076,7 +1102,9 @@ body {
 .hotel-price {
   grid-area: price;
   font-weight: 400;
+  color: var(--main-color);
   font-size: 18px;
+  justify-self: right;
   line-height: 21px;
   margin: 0;
 }
@@ -1085,6 +1113,8 @@ body {
   grid-area: stars;
   margin: 0;
   display: flex;
+  width: 140px;
+  height: 37px;
   align-items: center;
   cursor: pointer;
 }
@@ -1120,23 +1150,63 @@ body {
 }
 
 .hotel-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: right;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  width: 140px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
   grid-area: rating;
   margin: 0;
 }
 
-.page-button {
+.card-button-details {
+  width: 140px;
+  height: 37px;
+  grid-area: details;
+}
+
+.card-button-favorite {
+  width: 140px;
+  height: 37px;
   grid-area: favorite;
+  justify-self: right;
 }
 
 .pagination-list {
   list-style: none;
   display: flex;
+  margin-bottom: 80px;
   gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination::before {
+  content: "";
+  display: block;
+  margin: 40px auto 40px auto;
+  width: 1060px;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+
+.pagination {
+  margin-bottom: 60px;
 }
 
 .pagination-item {
   width: 60px;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   background-color: #82B3D3;
   font-weight: 700;
@@ -1148,6 +1218,11 @@ body {
 
 .pagination-item-selected {
   background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-item-blank {
+  background-color: #FFFFFF;
   color: #000000;
 }
 
@@ -1183,6 +1258,7 @@ body {
 .filter-button-reset {
   width: 191px;
   height: 36px;
+  background-color: rgba(130, 179, 211, 0)
 }
 
 .filter-bonuses {
@@ -1204,23 +1280,26 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 
 .modal {
   position: relative;
   margin: auto;
   width: 717px;
+  box-sizing: border-box;
   min-height: 576px;
   padding: 64px 70px;
   background-color: #ffffff;
+  border-radius: 30px;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 64px;
+  right: 52px;
   width: 52px;
   height: 52px;
   background-color: #F2F2F2;
@@ -1232,9 +1311,12 @@ body {
   cursor: pointer;
 }
 
-.modal-content {
+.modal-menu {
+  width: 577px;
+  height: 448px;
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: 137px 110px auto 137px 110px;
+  grid-template-columns: 137px 110px 88px 132px 110px;
   grid-template-rows: auto repeat(6, 48px) auto;
   align-items: center;
   justify-items: stretch;
@@ -1265,11 +1347,13 @@ body {
 
 .modal-inform-arrive {
   grid-row: 3/4;
+  grid-column: 2/-1;
   color: #FF5757;
 }
 
 .modal-inform-departure {
   grid-row: 5/6;
+  grid-column: 2/-1;
 }
 
 .modal-departure {
@@ -1302,17 +1386,17 @@ body {
 }
 
 .modal-age-input {
-padding-left: 40px;
-padding-right: 40px;
+padding-left: 50px;
 box-sizing: border-box;
- width: 110px;
- height: 48px;
- font-weight: 700;
- font-size: 18px;
- line-height: 20px;
- background-color: #F2F2F2;
-  border: none;
-  outline: none;
+width: 110px;
+height: 48px;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+background-color: #F2F2F2;
+border: none;
+outline: none;
+
 
 }
 
@@ -1322,24 +1406,32 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+
+
 .modal-age-mark {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .modal-age-mark::before {
-  transform: translateX(50px) translateY(23px);
+  position: absolute;
+  top: 23px;
+  left: 20px;
   content: "";
   cursor: pointer;
   display: block;
   width: 40px;
   height: 48px;
-
   background-image: url(../images/modal-minus.svg);
   background-repeat: no-repeat;
 }
 
 .modal-age-mark::after {
-  transform: translateX(-30px) translateY(20px);
+  position: absolute;
+  top: 18px;
+  left: 80px;
   content: "";
   cursor: pointer;
   display: block;
