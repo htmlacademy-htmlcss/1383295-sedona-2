@@ -253,7 +253,7 @@ body {
 }
 
 .site-link:active {
-  border-bottom: 2px solid greenyellow;
+  border-bottom: 2px solid #756257;
 }
 
 .user-link:not(.button):hover {

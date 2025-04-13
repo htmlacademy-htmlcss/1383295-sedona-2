@@ -127,7 +127,7 @@
                 </label>
                 <label class="price-control">
                   <span class="price-label">до</span>
-                  <input class="price-input price-max" type="number" placeholder="9000" min="0" max="9000" value="0" step="1" name="price-max">
+                  <input class="price-input price-max" type="number" placeholder="9000" min="0" max="9000" value="9000" step="1" name="price-max">
                 </label>
               </div>
 
@@ -262,8 +262,7 @@
         <h2 class="subscribing-title">Подпишитесь на рассылку</h2>
         <p class="subscribing-subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscribing-form" action="https://echo.htmlacademy.ru/" method="post" >
-          <input class="subscribing-input" type="email" id="subscribing-field" placeholder="Ваш e-mail" name="subscribe" required>
-          <label class="subscribing-control" for="subscribing-field"></label>
+          <input class="subscribing-input" type="email" id="subscribing-field" placeholder="Ваш e-mail" name="subscribe" required id="subscription-field">
           <button class="subscribing-button button page-button-blue" type="submit">Подписаться</button>
         </form>
       </section>
@@ -272,27 +271,26 @@
     <footer class="footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-link vk-link" href="https://vk.com/htmlacademy" target="_blank">
+          <a class="social-link vk-link" href="https://vk.com/htmlacademy" target="_blank" tabindex="0">
             <span class="visually-hidden">Канал в Вконтакте</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link tg-link" href="https://t.me/htmlacademy" target="_blank">
+          <a class="social-link tg-link" href="https://t.me/htmlacademy" target="_blank" tabindex="0">
             <span class="visually-hidden">Канал в Telegram</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link utube-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <a class="social-link utube-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" tabindex="0">
             <span class="visually-hidden">Канал в Utube</span>
           </a>
         </li>
       </ul>
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="footer-developer" href="https://htmlacademy.ru/study" target="_blank">
+      <a class="footer-phone" href="tel:+78128121212" tabindex="0">+7 (812) 812-12-12</a>
+      <a class="footer-developer" href="https://htmlacademy.ru/study" target="_blank" tabindex="0">
         <span class="visually-hidden">Сайт разработчика сайта</span>
       </a>
     </footer>
-
   </div>
 </body>
 </html>
