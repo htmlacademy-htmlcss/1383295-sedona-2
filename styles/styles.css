@@ -1214,16 +1214,29 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.pagination-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 1);
+}
+
 .pagination-item-selected {
   background-color: rgb(242, 242, 242);
+}
+
+.pagination-item-selected .pagination-link {
   color: rgb(0, 0, 0);
 }
 
 .pagination-item-blank {
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
 }
 
+.pagination-item-blank .pagination-link {
+  color: rgb(0, 0, 0);
+}
 
 .search-button {
   min-width: 376px;

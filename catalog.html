@@ -58,7 +58,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-link-hotels" aria-current="page">Гостиницы</a>
+              <a class="breadcrumbs-link breadcrumbs-link-hotels" aria-current="page" tabindex="0">Гостиницы</a>
             </li>
           </ul>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -68,22 +68,22 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
-                    <span class="control-mark"></span>
+                    <input class="control-input visually-hidden" type="checkbox" name="pool" checked tabindex="-1">
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class=" control-input visually-hidden" type="checkbox" name="parking" checked>
-                    <span class="control-mark"></span>
+                    <input class=" control-input visually-hidden" type="checkbox" name="parking" checked tabindex="-1">
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="wifi">
-                    <span class="control-mark"></span>
+                    <input class="control-input visually-hidden" type="checkbox" name="wifi" tabindex="-1">
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
@@ -95,22 +95,22 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="appartament-group" value="type:hotel" checked>
-                    <span class="control-mark"></span>
+                    <input class="control-input visually-hidden" type="radio" name="appartament-group" value="type:hotel" checked tabindex="-1">
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="appartament-group" value="type:motel">
-                    <span class="control-mark"></span>
+                    <input class="control-input visually-hidden" type="radio" name="appartament-group" value="type:motel" tabindex="-1">
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="appartament-group" value="type:appartaments">
-                    <span class="control-mark"></span>
+                    <input class="control-input visually-hidden" type="radio" name="appartament-group" value="type:appartaments" tabindex="-1">
+                    <span class="control-mark" tabindex="0"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
@@ -185,7 +185,7 @@
           <ul class="hotel-list">
             <li class="hotel-item">
               <h3 class="hotel-title">Amara Resort & Spa</h3>
-              <a href="#" class="hotel-link">
+              <a href="#" class="hotel-link" tabindex="-1">
                 <img src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Амара Резорт Спа">
               </a>
               <p class="hotel-type">Гостиница</p>
@@ -197,7 +197,7 @@
             </li>
             <li class="hotel-item">
               <h3 class="hotel-title">Villas at Poco Diablo</h3>
-              <a href="#" class="hotel-link">
+              <a href="#" class="hotel-link" tabindex="-1">
                 <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Виллас эт Поко Диабло">
               </a>
               <p class="hotel-type">Гостиница</p>
@@ -209,7 +209,7 @@
             </li>
             <li class="hotel-item">
               <h3 class="hotel-title">Desert Quail Inn</h3>
-              <a href="#" class="hotel-link">
+              <a href="#" class="hotel-link" tabindex="-1">
                 <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Дезерт Квейл Инн">
               </a>
               <p class="hotel-type">Гостиница</p>
@@ -221,7 +221,7 @@
             </li>
             <li class="hotel-item">
               <h3 class="hotel-title">GreenTree Inn</h3>
-              <a href="#" class="hotel-link">
+              <a href="#" class="hotel-link" tabindex="-1">
                 <img src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Грин Три Инн">
               </a>
               <p class="hotel-type">Гостиница</p>
@@ -235,12 +235,24 @@
           <!-- Пагинация -->
           <div class="pagination">
             <ul class="pagination-list">
-              <li class="pagination-item pagination-item-selected">1</li>
-              <li class="pagination-item">2</li>
-              <li class="pagination-item">3</li>
-              <li class="pagination-item">4</li>
-              <li class="pagination-item pagination-item-blank">...</li>
-              <li class="pagination-item">10</li>
+              <li class="pagination-item pagination-item-selected">
+                <a href="catalog.html" aria-current="page" class="pagination-link">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">4</a>
+              </li>
+              <li class="pagination-item pagination-item-blank">
+                <a href="#" class="pagination-link" tabIndex="-1">...</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">10</a>
+              </li>
             </ul>
           </div>
         </div>
