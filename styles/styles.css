@@ -144,16 +144,15 @@ body {
 
 .header-logo {
   margin-left: 70px;
+  margin-right: 29px;
 }
 
 .header-navigation {
   display: flex;
-  margin-left: 2.5%;
 }
 
 .site-list, .user-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
   padding-left: 0;
@@ -161,12 +160,8 @@ body {
 
 .site-list {
   width: 339px;
-}
-
-.user-list {
-  margin: 0;
-  width: 268px;
-  margin-left: 285px;
+  justify-content: space-around;
+  margin-right: 285px;
 }
 
 .site-link {
@@ -181,6 +176,11 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: var(--strong-black);
+}
+
+.user-link:not(.button) {
+  width: 44px;
+  height: 64px;
 }
 
 .find-link {
@@ -204,6 +204,7 @@ body {
 .user-item:nth-child(3) .user-link {
   min-width: 160px;
   min-height: 36px;
+  margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,7 +235,7 @@ body {
   display: block;
   grid-column: 3/5;
   grid-row: 1/-1;
-  align-self: start;
+  /* align-self: start; */
   height: 20px;
   width: 20px;
   font-size: 10px;
@@ -246,6 +247,7 @@ body {
   padding: 5px;
   border-radius: 50px;
   z-index: 10;
+  margin-bottom: 20px;
 }
 
 .site-link:hover, .site-link:focus-visible {
@@ -511,7 +513,7 @@ body {
 }
 
 .subscribing-with-picture {
-  margin-top: 100px;
+  margin-top: 90px;
   background-image: url("../images/index/subscription-mounts.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -719,6 +721,11 @@ body {
   padding-left: 0;
   display: flex;
   position: relative;
+  height: 21px;
+}
+
+.breadcrumbs-item:first-child {
+  margin-left: -8px;
 }
 
 
@@ -727,6 +734,11 @@ body {
   color: rgb(255, 255, 255);
   display: flex;
   padding: 7px;
+  font-size: 16px;
+}
+
+.breadcrumbs-link-hotels {
+  margin-left: 3px;
 }
 
 .breadcrumbs-link-general::before {
@@ -751,7 +763,8 @@ body {
 
 .filter-form {
   display: flex;
-  margin-top: 30px;
+  margin-top: 45px;
+  margin-left: 0;
 }
 
 .catalog-filter-legend {
@@ -921,13 +934,14 @@ body {
 
 .toggle-max {
   top: -8px;
-  left: 220px;
+  left: 207px;
 }
 
 .catalog-filter-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  line-height: 23px;
 }
 
 .select-control {
@@ -1273,11 +1287,11 @@ body {
 }
 
 .filter-bonuses {
-  margin-right: 70px;
+  margin-right: 66px;
 }
 
 .filter-types {
-  margin-right: 140px;
+  margin-right: 150px;
 }
 
 .filter-money {
