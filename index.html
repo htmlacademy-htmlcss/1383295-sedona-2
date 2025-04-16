@@ -111,14 +111,14 @@
           <section class="search" data-test="search">
             <h2 class="search-title">Заинтересовались?</h2>
             <p class="search-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="search-button button page-button-green" href="">Поиск гостиницы в Седоне</button>
+            <button class="search-button button page-button-green">Поиск гостиницы в Седоне</button>
           </section>
         <!-- Секция "Подписка на рассылку" -->
           <section class="subscribing subscribing-with-picture" data-test="subscribe">
             <h2 class="subscribing-title">Подпишитесь на рассылку</h2>
             <p class="subscribing-subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribing-form" action="https://echo.htmlacademy.ru/" method="post" >
-              <input class="subscribing-input" type="email" id="subscribing-field" placeholder="Ваш e-mail" name="subscribe" required id="subscription-field">
+              <input class="subscribing-input" type="email" id="subscribing-field" placeholder="Ваш e-mail" name="subscribe" required>
               <label class="subscribing-control" for="subscribing-field">Ваш e-mail</label>
               <button class="subscribing-button button page-button-blue" type="submit">Подписаться</button>
             </form>
@@ -151,7 +151,7 @@
                 <p class="modal-inform modal-inform-departure">На эти даты есть свободные номера. Пока есть.</p>
 
                 <div class="modal-age">
-                  <label class="modal-age-control">
+                  <div class="modal-age-control">
                     <span class="modal-age-label age-adults">Взрослые:</span>
                     <div class="modal-age-mark">
                       <button type="button" class="modal-age-button modal-age-minus">
@@ -162,9 +162,9 @@
                         <span class="visually-hidden">Увеличить число взрослых мест</span>
                       </button>
                     </div>
-                  </label>
+                  </div>
 
-                  <label class="modal-age-control">
+                  <div class="modal-age-control">
                     <span class="modal-age-label age-children">Дети:</span>
                     <button class="modal-tooltip-toggle" type="button">i</button>
                     <span class="modal-tooltip-text">
@@ -179,7 +179,7 @@
                         <span class="visually-hidden">Увеличить число взрослых мест</span>
                       </button>
                     </span>
-                  </label>
+                  </div>
                 </div>
 
                 <button class="modal-button button page-button-blue" type="button">Начать
