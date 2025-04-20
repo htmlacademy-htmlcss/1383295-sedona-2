@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -37,7 +37,7 @@
               </a>
             </li>
             <li class="user-item">
-              <a class="user-link button page-button-green" href="#">Хочу сюда!</a>
+              <a class="user-link button page-button-green user-link-buuton" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -61,19 +61,19 @@
                     </div>
                     <img class="advantages-picture" src="images/index/index-1.jpg" width="800" height="385" alt="Прекрасный вид на ратушу города Седона">
                   </li>
-                  <li class="advantages-item block-shade-another">
+                  <li class="advantages-item">
                     <div class="advantages-text">
                       <h3 class="advantages-name">Небольшая площадь</h3>
                       <p class="advantages-description">Все достопримечательности находятся очень близко</p>
                     </div>
                   </li>
-                  <li class="advantages-item block-shade">
+                  <li class="advantages-item">
                     <div class="advantages-text">
                       <h3 class="advantages-name">Красивая <br>дорога</h3>
                       <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </div>
                   </li>
-                  <li class="advantages-item block-shade-another">
+                  <li class="advantages-item">
                     <div class="advantages-text">
                       <h3 class="advantages-name">Мало <br>туристов</h3>
                       <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -97,7 +97,7 @@
                 <h3 class="service-name">Жильё</h3>
                 <p class="service-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
               </li>
-              <li class="service-item service-burger block-light">
+              <li class="service-item service-burger">
                 <h3 class="service-name">Еда</h3>
                 <p class="service-description">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
@@ -111,7 +111,7 @@
           <section class="search" data-test="search">
             <h2 class="search-title">Заинтересовались?</h2>
             <p class="search-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="search-button button page-button-green" href="">Поиск гостиницы в Седоне</button>
+            <button class="search-button button page-button-green">Поиск гостиницы в Седоне</button>
           </section>
         <!-- Секция "Подписка на рассылку" -->
           <section class="subscribing subscribing-with-picture" data-test="subscribe">
@@ -119,14 +119,14 @@
             <p class="subscribing-subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribing-form" action="https://echo.htmlacademy.ru/" method="post" >
               <input class="subscribing-input" type="email" id="subscribing-field" placeholder="Ваш e-mail" name="subscribe" required>
-              <label class="subscribing-control" for="subscribing-field"></label>
+              <label class="subscribing-control" for="subscribing-field">Ваш e-mail</label>
               <button class="subscribing-button button page-button-blue" type="submit">Подписаться</button>
             </form>
           </section>
         </main>
         <!-- Модальное окно" -->
         <div class="modal-container">
-          <div class="modal" data-test="modal">
+          <div class="modal">
             <button class="modal-close-button">
               <span class="visually-hidden">Закрыть</span>
             </button>
@@ -134,57 +134,62 @@
             <section class="modal-menu">
               <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
-              <label class="modal-transfer modal-arrive">
-                  <span class="modal-label">Дата Заезда:</span>
-                  <span class="date-wrapper">
-                    <input class="modal-date" type="text" placeholder="27 апреля 2020" name="arrive" value="27 апреля 2020">
-                  </span>
-                </label>
-                <p class="modal-inform modal-inform-arrive">Мы не можем отправить вас в прошлое</p>
-
-                <label class="modal-transfer modal-departure">
-                  <span class="modal-label">Дата Выезда:</span>
-                  <span class="date-wrapper">
-                    <input class="modal-date" type="text" placeholder="1 сентября 2023" name="departure" value="1 сентября 2023">
-                  </span>
-                </label>
-                <p class="modal-inform modal-inform-departure">На эти даты есть свободные номера. Пока есть.</p>
-
-                <div class="modal-age">
-                  <label class="modal-age-control">
-                    <span class="modal-age-label age-adults">Взрослые:</span>
-                    <div class="modal-age-mark">
-                      <button type="button" class="modal-age-button modal-age-minus">
-                        <span class="visually-hidden">Уменьшить число взрослых мест</span>
-                      </button>
-                      <input class="modal-age-input" type="number" name="adults" placeholder="2" min="0" max="99" value="2">
-                      <button type="button" class="modal-age-button modal-age-plus">
-                        <span class="visually-hidden">Увеличить число взрослых мест</span>
-                      </button>
+              <ul class="modal-menu-list">
+                <li class="modal-menu-item">
+                  <label class="modal-transfer modal-arrive">
+                    <span class="modal-label">Дата Заезда:</span>
+                    <span class="date-wrapper">
+                      <input class="modal-date" type="text" placeholder="27 апреля 2020" name="arrive" value="27 апреля 2020">
+                    </span>
+                  </label>
+                  <p class="modal-inform modal-inform-arrive">Мы не можем отправить вас в прошлое</p>
+                </li>
+                <li class="modal-menu-item">
+                  <label class="modal-transfer modal-departure">
+                    <span class="modal-label">Дата Выезда:</span>
+                    <span class="date-wrapper">
+                      <input class="modal-date" type="text" placeholder="1 сентября 2023" name="departure" value="1 сентября 2023">
+                    </span>
+                  </label>
+                  <p class="modal-inform modal-inform-departure">На эти даты есть свободные номера. Пока есть.</p>
+                </li>
+                <li class="modal-menu-item">
+                  <div class="modal-age">
+                    <div class="modal-age-control">
+                      <span class="modal-age-label age-adults">Взрослые:</span>
+                      <div class="modal-age-mark">
+                        <button type="button" class="modal-age-button modal-age-minus">
+                          <span class="visually-hidden">Уменьшить число взрослых мест</span>
+                        </button>
+                        <input class="modal-age-input" type="number" name="adults" placeholder="2" min="0" max="99" value="2">
+                        <button type="button" class="modal-age-button modal-age-plus">
+                          <span class="visually-hidden">Увеличить число взрослых мест</span>
+                        </button>
+                      </div>
                     </div>
-                  </label>
 
-                  <label class="modal-age-control">
-                    <span class="modal-age-label age-children">Дети:</span>
-                    <button class="modal-tooltip-toggle" type="button">i</button>
-                    <span class="modal-tooltip-text">
-                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                    </span>
-                    <span class="modal-age-mark">
-                      <button type="button" class="modal-age-button modal-age-minus">
-                        <span class="visually-hidden">Уменьшить число детских мест</span>
-                      </button>
-                      <input class="modal-age-input" type="number" name="adults" placeholder="2" min="0" max="99" value="2">
-                      <button type="button" class="modal-age-button modal-age-plus">
-                        <span class="visually-hidden">Увеличить число взрослых мест</span>
-                      </button>
-                    </span>
-                  </label>
-                </div>
-
-                <button class="modal-button button page-button-blue" type="button">Начать
-                  <span class="visually-hidden">Начать поиск гостиницы</span>
-                </button>
+                    <div class="modal-age-control">
+                      <span class="modal-age-label age-children">Дети:</span>
+                      <button class="modal-tooltip-toggle" type="button">i</button>
+                      <span class="modal-tooltip-text">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </span>
+                      <span class="modal-age-mark">
+                        <button type="button" class="modal-age-button modal-age-minus">
+                          <span class="visually-hidden">Уменьшить число детских мест</span>
+                        </button>
+                        <input class="modal-age-input" type="number" name="adults" placeholder="2" min="0" max="99" value="2">
+                        <button type="button" class="modal-age-button modal-age-plus">
+                          <span class="visually-hidden">Увеличить число взрослых мест</span>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button class="modal-button button page-button-blue" type="button">Начать
+                <span class="visually-hidden">Начать поиск гостиницы</span>
+              </button>
             </section>
           </div>
         </div>
@@ -192,23 +197,25 @@
       <footer class="footer" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link vk-link" href="https://vk.com/htmlacademy" target="_blank">
+            <a class="social-link vk-link" href="https://vk.com/htmlacademy" target="_blank" tabindex="0">
               <span class="visually-hidden">Канал в Вконтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link tg-link" href="https://t.me/htmlacademy" target="_blank">
+            <a class="social-link tg-link" href="https://t.me/htmlacademy" target="_blank" tabindex="0">
               <span class="visually-hidden">Канал в Telegram</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link utube-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <a class="social-link utube-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" tabindex="0">
               <span class="visually-hidden">Канал в Utube</span>
             </a>
           </li>
         </ul>
-        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-developer" href="https://htmlacademy.ru/study" target="_blank">
+        <address class="footer-address">
+          <a class="footer-phone" href="tel:+78128121212" tabindex="0">+7 (812) 812-12-12</a>
+        </address>
+        <a class="footer-developer" href="https://htmlacademy.ru/study" target="_blank" tabindex="0">
           <span class="visually-hidden">Сайт разработчика сайта</span>
         </a>
       </footer>
