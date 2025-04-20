@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
-  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="user-item">
-            <a class="user-link button page-button-green" href="#">Хочу сюда!</a>
+            <a class="user-link button page-button-green user-link-buuton" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -48,6 +48,8 @@
     <main class="main" data-test="main">
       <!-- Секция "Результаты" Поиск и результаты поисковой выдачи -->
       <section class="results">
+        <h2 class="visually-hidden">Поиск гостиницы по фильтрам</h2>
+        <!-- Верхняя часть по настройке фильтров поиска-->
         <div class="filter" data-test="filter">
           <h1 class="filter-title">Гостиницы Седоны</h1>
           <!-- "Хлебные крошки" -->
@@ -151,12 +153,12 @@
             </fieldset>
           </form>
         </div>
-       <!-- "Выдача результатов поиска" -->
+       <!-- Нижняя часть с выдачей результатов поисков -->
         <div class="catalog-wrapper" data-test="catalog">
           <!-- Приборная панель с сортировкой -->
           <div class="table-board">
             <h2 class="results-title">Найдено гостиниц: 38</h2>
-            <form action="https://echo.htmlacademy.ru/" method="post">
+            <form action="https://echo.htmlacademy.ru/" method="post" class="table-board-form">
                 <select class="select-control" aria-label="Сортировка">
                   <option value="cheap">Сначала дешёвое</option>
                   <option value="popular">Сначала популярное</option>
@@ -164,7 +166,7 @@
                 </select>
             </form>
             <ul class="visual-list">
-              <li class="visual-item">
+              <li class="visual-item visual-button-current">
                 <a class="visual-button visual-button-tile visual-button-current" href="catalog.html?view=tile">
                   <span class="visually-hidden">Показать плиткой</span>
                 </a>
@@ -184,52 +186,76 @@
           <!-- Выдача карточек -->
           <ul class="hotel-list">
             <li class="hotel-item">
-              <h3 class="hotel-title">Amara Resort & Spa</h3>
               <a href="#" class="hotel-link" tabindex="-1">
                 <img src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Амара Резорт Спа">
               </a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">От 4000 Р</p>
-              <a class="card-button-details button page-button-green" href="#">Подробнее</a>
-              <button class="card-button-favorite button page-button-blue" type="button">В избранное</button>
-              <p class="hotel-stars hotel-stars-four"></p>
-              <p class="hotel-rating">Рейтинг: 8,5</p>
+              <h3 class="hotel-title">Amara Resort & Spa</h3>
+              <div class="hotel-info">
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-price">От 4000 Р</span>
+              </div>
+              <div class="hotel-item-buttons">
+                <a class="card-button-details button page-button-green" href="#">Подробнее</a>
+                <button class="card-button-favorite button page-button-blue" type="button">В избранное</button>
+              </div>
+              <div class="hotel-item-rating">
+                <p class="hotel-stars hotel-stars-four"></p>
+                <p class="hotel-rating">Рейтинг: 8,5</p>
+              </div>
             </li>
             <li class="hotel-item">
-              <h3 class="hotel-title">Villas at Poco Diablo</h3>
               <a href="#" class="hotel-link" tabindex="-1">
                 <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Виллас эт Поко Диабло">
               </a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">От 5000 Р</p>
-              <a class="card-button-details button page-button-green" href="#">Подробнее</a>
-              <button class="card-button-favorite button page-button-favorite" type="button">В избранном</button>
-              <p class="hotel-stars hotel-stars-four"></p>
-              <p class="hotel-rating">Рейтинг: 9,2</p>
+              <h3 class="hotel-title">Villas at Poco Diablo</h3>
+              <div class="hotel-info">
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-price">От 5000 Р</span>
+              </div>
+              <div class="hotel-item-buttons">
+                <a class="card-button-details button page-button-green" href="#">Подробнее</a>
+                <button class="card-button-favorite button page-button-favorite" type="button">В избранном</button>
+              </div>
+              <div class="hotel-item-rating">
+                <p class="hotel-stars hotel-stars-four"></p>
+                <p class="hotel-rating">Рейтинг: 9,2</p>
+              </div>
             </li>
             <li class="hotel-item">
-              <h3 class="hotel-title">Desert Quail Inn</h3>
               <a href="#" class="hotel-link" tabindex="-1">
                 <img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Дезерт Квейл Инн">
               </a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">От 2500 Р</p>
-              <a class="card-button-details button page-button-green" href="#">Подробнее</a>
-              <button class="card-button-favorite button page-button-blue" type="button">В избранное</button>
-              <p class="hotel-stars hotel-stars-three"></p>
-              <p class="hotel-rating">Рейтинг: 6,9</p>
+              <h3 class="hotel-title">Desert Quail Inn</h3>
+              <div class="hotel-info">
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-price">От 2500 Р</span>
+              </div>
+              <div class="hotel-item-buttons">
+                <a class="card-button-details button page-button-green" href="#">Подробнее</a>
+                <button class="card-button-favorite button page-button-blue" type="button">В избранное</button>
+              </div>
+              <div class="hotel-item-rating">
+                <p class="hotel-stars hotel-stars-three"></p>
+                <p class="hotel-rating">Рейтинг: 6,9</p>
+              </div>
             </li>
             <li class="hotel-item">
-              <h3 class="hotel-title">GreenTree Inn</h3>
               <a href="#" class="hotel-link" tabindex="-1">
                 <img src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Грин Три Инн">
               </a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">От 1500 Р</p>
-              <a class="card-button-details button page-button-green" href="#">Подробнее</a>
-              <button class="card-button-favorite button page-button-blue" type="button">В избранное</button>
-              <p class="hotel-stars hotel-stars-two"></p>
-              <p class="hotel-rating">Рейтинг: 5,0</p>
+              <h3 class="hotel-title">GreenTree Inn</h3>
+              <div class="hotel-info">
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-price">От 1500 Р</span>
+              </div>
+              <div class="hotel-item-buttons">
+                <a class="card-button-details button page-button-green" href="#">Подробнее</a>
+                <button class="card-button-favorite button page-button-blue" type="button">В избранное</button>
+              </div>
+              <div class="hotel-item-rating">
+                <p class="hotel-stars hotel-stars-two"></p>
+                <p class="hotel-rating">Рейтинг: 5,0</p>
+              </div>
             </li>
           </ul>
           <!-- Пагинация -->
@@ -286,7 +312,9 @@
           </a>
         </li>
       </ul>
-      <a class="footer-phone" href="tel:+78128121212" tabindex="0">+7 (812) 812-12-12</a>
+      <address class="footer-address">
+        <a class="footer-phone" href="tel:+78128121212" tabindex="0">+7 (812) 812-12-12</a>
+      </address>
       <a class="footer-developer" href="https://htmlacademy.ru/study" target="_blank" tabindex="0">
         <span class="visually-hidden">Сайт разработчика сайта</span>
       </a>
